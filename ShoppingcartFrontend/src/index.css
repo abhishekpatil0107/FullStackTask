@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+
+.navbar {
+  background-color: #1f2937; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  color: #f9fafb; 
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #facc15; 
+}
+
+.cart-badge {
+  background-color: #f59e0b; 
+  color: black;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  border-radius: 9999px;
+  margin-left: 0.25rem;
+}
+
+
+.card {
+  background-color: #1f2937;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 220px;
+  background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.card-img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-yellow {
+  background-color: #facc15;
+  color: black;
+}
+.btn-yellow:hover {
+  background-color: #fbbf24;
+}
+.btn-gray {
+  background-color: #374151;
+  color: white;
+}
+.btn-gray:hover {
+  background-color: #4b5563;
+}
+
+
+.cart-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
